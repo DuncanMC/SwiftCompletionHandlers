@@ -9,15 +9,37 @@
 import Foundation
 import UIKit
 
+/**
+This class is a singleton that simulates providing async download services for an app.
+Use the public contsant sharedAsyncManager to get a pointer to the singleton.
+
+*/
+
 class AsyncManager
 {
   static let sharedAsyncManager = AsyncManager()
   
-  func asyncFetchImage(#imageName: String, completion: (image: UIImage?, status: String) -> ())
+  /**
+  This function simulates an async download of a file from the internet. 
+  (It actually just asynchronously loads an image from the local image catalog after a delay)
+  
+  :param: **imageName**: the filename of the image to load.
+  
+  :param: **completion**: a closure to execute once the download is comlete.
+  
+  :returns: No return value
+  
+  The completion block takes 2 parameters, the UIImage that was downloaded, and a status message string.
+  */
+  
+  func asyncFetchImage(#imageName: String,
+    completion: (
+      image: UIImage?,
+      status: String) -> ())
   {
     println("Entering \(__FUNCTION__)")
     
-    //Simulate a network operation by waiting 1 second before loading an image
+    //Simulate a network operation by waiting a few seconds before loading an image
     let nSecDispatchTime = dispatch_time(DISPATCH_TIME_NOW, Int64(3.0 * Double(NSEC_PER_SEC)))
     let queue = dispatch_get_main_queue()
     dispatch_after(nSecDispatchTime, queue)

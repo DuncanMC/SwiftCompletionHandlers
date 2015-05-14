@@ -11,7 +11,14 @@ import UIKit
 class ViewController: UIViewController {
   
   @IBOutlet weak var theImageView: UIImageView!
-    
+  
+  /**
+  This method uses the AsyncManager singleton to load an image into theImageView
+  
+  The AsyncManager function asyncFetchImage simulates aysnch download of an image from the internet.
+  
+  It takes a completion block that's called once the image download is complete.
+*/
   @IBAction func loadImage(sender: UIButton)
   {
     let theAsyncManager = AsyncManager.sharedAsyncManager
