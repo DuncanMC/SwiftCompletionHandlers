@@ -13,6 +13,8 @@
 		AEA8C7311B04DDF80009E0EB /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AEA8C7301B04DDF80009E0EB /* Images.xcassets */; };
 		AEA8C7341B04DDF80009E0EB /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = AEA8C7321B04DDF80009E0EB /* LaunchScreen.xib */; };
 		AEA8C7401B04DDF80009E0EB /* SwiftCompletionHandlersTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEA8C73F1B04DDF80009E0EB /* SwiftCompletionHandlersTests.swift */; };
+		AEA8C74A1B04DE330009E0EB /* AsyncManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEA8C7491B04DE330009E0EB /* AsyncManager.swift */; };
+		AEA8C74C1B04DFCC0009E0EB /* UIViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEA8C74B1B04DFCC0009E0EB /* UIViewExtensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +38,8 @@
 		AEA8C7391B04DDF80009E0EB /* SwiftCompletionHandlersTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftCompletionHandlersTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AEA8C73E1B04DDF80009E0EB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AEA8C73F1B04DDF80009E0EB /* SwiftCompletionHandlersTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftCompletionHandlersTests.swift; sourceTree = "<group>"; };
+		AEA8C7491B04DE330009E0EB /* AsyncManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AsyncManager.swift; sourceTree = "<group>"; };
+		AEA8C74B1B04DFCC0009E0EB /* UIViewExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewExtensions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +82,8 @@
 			isa = PBXGroup;
 			children = (
 				AEA8C7291B04DDF70009E0EB /* AppDelegate.swift */,
+				AEA8C74B1B04DFCC0009E0EB /* UIViewExtensions.swift */,
+				AEA8C7491B04DE330009E0EB /* AsyncManager.swift */,
 				AEA8C72B1B04DDF70009E0EB /* ViewController.swift */,
 				AEA8C72D1B04DDF80009E0EB /* Main.storyboard */,
 				AEA8C7301B04DDF80009E0EB /* Images.xcassets */,
@@ -213,6 +219,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				AEA8C72C1B04DDF70009E0EB /* ViewController.swift in Sources */,
+				AEA8C74A1B04DE330009E0EB /* AsyncManager.swift in Sources */,
+				AEA8C74C1B04DFCC0009E0EB /* UIViewExtensions.swift in Sources */,
 				AEA8C72A1B04DDF70009E0EB /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
