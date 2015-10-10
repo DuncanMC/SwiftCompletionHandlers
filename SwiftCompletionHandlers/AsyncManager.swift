@@ -32,12 +32,12 @@ class AsyncManager
   The completion block takes 2 parameters, the UIImage that was downloaded, and a status message string.
   */
   
-  func asyncFetchImage(#imageName: String,
+  func asyncFetchImage(imageName imageName: String,
     completion: (
       image: UIImage?,
       status: String) -> ())
   {
-    println("Entering \(__FUNCTION__)")
+    print("Entering \(__FUNCTION__)")
     
     //Simulate a network operation by waiting a few seconds before loading an image
     let nSecDispatchTime = dispatch_time(DISPATCH_TIME_NOW, Int64(3.0 * Double(NSEC_PER_SEC)))
@@ -46,12 +46,11 @@ class AsyncManager
       {
         () -> Void in
         let result = UIImage(named: imageName)
-        println("Loading image in background")
+        print("Loading image in background")
         let status = result != nil ? "image loaded" : "Error loading image"
-        println("About to call completion handler")
+        print("About to call completion handler")
         completion(image: result, status: status)
     }
-    println("Leaving \(__FUNCTION__)")
+    print("Leaving \(__FUNCTION__)")
   }
-  
 }

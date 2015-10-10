@@ -22,15 +22,15 @@ class ViewController: UIViewController {
   @IBAction func loadImage(sender: UIButton)
   {
     let theAsyncManager = AsyncManager.sharedAsyncManager
-    println("about to call asyncFetchImage")
+    print("about to call asyncFetchImage")
     theAsyncManager.asyncFetchImage(imageName: "wareto_blue_150x115")
       {
         (image, status) -> () in
-        println("Beginning completion block")
+        print("Beginning completion block")
         self.theImageView.image = image
-        println("In completion block, status = \(status)")
+        print("In completion block, status = \(status)")
     }
-    println("After call to asyncFetchImage")
+    print("After call to asyncFetchImage")
   }
 }
 
